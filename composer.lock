@@ -4,8 +4,64 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a7646c2bd8ee41b6074937fe976eaad9",
+    "content-hash": "331bd0ac9ea8532857b6b43d5d4747b1",
     "packages": [
+        {
+            "name": "asm89/stack-cors",
+            "version": "v2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asm89/stack-cors.git",
+                "reference": "8d8f88b3b3830916be94292c1fbce84433efb1aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asm89/stack-cors/zipball/8d8f88b3b3830916be94292c1fbce84433efb1aa",
+                "reference": "8d8f88b3b3830916be94292c1fbce84433efb1aa",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0|^8.0",
+                "symfony/http-foundation": "~2.7|~3.0|~4.0|~5.0",
+                "symfony/http-kernel": "~2.7|~3.0|~4.0|~5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6|^7|^8|^9",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Asm89\\Stack\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander",
+                    "email": "iam.asm89@gmail.com"
+                }
+            ],
+            "description": "Cross-origin resource sharing library and stack middleware",
+            "homepage": "https://github.com/asm89/stack-cors",
+            "keywords": [
+                "cors",
+                "stack"
+            ],
+            "support": {
+                "issues": "https://github.com/asm89/stack-cors/issues",
+                "source": "https://github.com/asm89/stack-cors/tree/v2.0.2"
+            },
+            "time": "2020-10-29T16:03:21+00:00"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "4.1.0",
@@ -466,8 +522,85 @@
             "time": "2020-12-14T16:22:20+00:00"
         },
         {
+            "name": "fruitcake/laravel-cors",
+            "version": "v2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fruitcake/laravel-cors.git",
+                "reference": "01de0fe5f71c70d1930ee9a80385f9cc28e0f63a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fruitcake/laravel-cors/zipball/01de0fe5f71c70d1930ee9a80385f9cc28e0f63a",
+                "reference": "01de0fe5f71c70d1930ee9a80385f9cc28e0f63a",
+                "shasum": ""
+            },
+            "require": {
+                "asm89/stack-cors": "^2.0.1",
+                "illuminate/contracts": "^6|^7|^8|^9",
+                "illuminate/support": "^6|^7|^8|^9",
+                "php": ">=7.2",
+                "symfony/http-foundation": "^4|^5",
+                "symfony/http-kernel": "^4.3.4|^5"
+            },
+            "require-dev": {
+                "laravel/framework": "^6|^7|^8",
+                "orchestra/testbench-dusk": "^4|^5|^6",
+                "phpunit/phpunit": "^6|^7|^8",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Fruitcake\\Cors\\CorsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fruitcake\\Cors\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fruitcake",
+                    "homepage": "https://fruitcake.nl"
+                },
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "Adds CORS (Cross-Origin Resource Sharing) headers support in your Laravel application",
+            "keywords": [
+                "api",
+                "cors",
+                "crossdomain",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/fruitcake/laravel-cors/issues",
+                "source": "https://github.com/fruitcake/laravel-cors/tree/v2.0.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/barryvdh",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-10-22T13:57:20+00:00"
+        },
+        {
             "name": "illuminate/auth",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/auth.git",
@@ -522,7 +655,7 @@
         },
         {
             "name": "illuminate/broadcasting",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/broadcasting.git",
@@ -577,7 +710,7 @@
         },
         {
             "name": "illuminate/bus",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/bus.git",
@@ -626,7 +759,7 @@
         },
         {
             "name": "illuminate/cache",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/cache.git",
@@ -681,7 +814,7 @@
         },
         {
             "name": "illuminate/config",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/config.git",
@@ -729,7 +862,7 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
@@ -787,7 +920,7 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
@@ -835,7 +968,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -883,16 +1016,16 @@
         },
         {
             "name": "illuminate/database",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "21a9293bba2e8afaf474b4c86e9ebe8dd643901f"
+                "reference": "49563a8b1676c13207b3c3bd516f1b7a8c343887"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/21a9293bba2e8afaf474b4c86e9ebe8dd643901f",
-                "reference": "21a9293bba2e8afaf474b4c86e9ebe8dd643901f",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/49563a8b1676c13207b3c3bd516f1b7a8c343887",
+                "reference": "49563a8b1676c13207b3c3bd516f1b7a8c343887",
                 "shasum": ""
             },
             "require": {
@@ -944,11 +1077,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2020-12-29T15:07:22+00:00"
+            "time": "2021-01-13T13:35:45+00:00"
         },
         {
             "name": "illuminate/encryption",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/encryption.git",
@@ -999,7 +1132,7 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -1048,7 +1181,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -1105,7 +1238,7 @@
         },
         {
             "name": "illuminate/hashing",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/hashing.git",
@@ -1153,7 +1286,7 @@
         },
         {
             "name": "illuminate/http",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/http.git",
@@ -1207,7 +1340,7 @@
         },
         {
             "name": "illuminate/log",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/log.git",
@@ -1256,7 +1389,7 @@
         },
         {
             "name": "illuminate/pagination",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pagination.git",
@@ -1305,7 +1438,7 @@
         },
         {
             "name": "illuminate/pipeline",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/pipeline.git",
@@ -1354,7 +1487,7 @@
         },
         {
             "name": "illuminate/queue",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/queue.git",
@@ -1418,7 +1551,7 @@
         },
         {
             "name": "illuminate/session",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/session.git",
@@ -1473,7 +1606,7 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
@@ -1538,7 +1671,7 @@
         },
         {
             "name": "illuminate/translation",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/translation.git",
@@ -1588,16 +1721,16 @@
         },
         {
             "name": "illuminate/validation",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/validation.git",
-                "reference": "0c14503d18e46d475b761fce36f0cf0c7c561bfd"
+                "reference": "292b63fb50a999cf8cab8deffb60c696b0be8ce1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/validation/zipball/0c14503d18e46d475b761fce36f0cf0c7c561bfd",
-                "reference": "0c14503d18e46d475b761fce36f0cf0c7c561bfd",
+                "url": "https://api.github.com/repos/illuminate/validation/zipball/292b63fb50a999cf8cab8deffb60c696b0be8ce1",
+                "reference": "292b63fb50a999cf8cab8deffb60c696b0be8ce1",
                 "shasum": ""
             },
             "require": {
@@ -1640,11 +1773,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2020-12-21T22:30:16+00:00"
+            "time": "2021-01-06T13:35:15+00:00"
         },
         {
             "name": "illuminate/view",
-            "version": "v6.20.9",
+            "version": "v6.20.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/view.git",
@@ -2579,70 +2712,6 @@
                 "source": "https://github.com/bobthecow/psysh/tree/v0.10.5"
             },
             "time": "2020-12-04T02:51:30+00:00"
-        },
-        {
-            "name": "spatie/laravel-cors",
-            "version": "1.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/spatie/laravel-cors.git",
-                "reference": "d74099d57821d5a72ae21416c0be0dcd58779355"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-cors/zipball/d74099d57821d5a72ae21416c0be0dcd58779355",
-                "reference": "d74099d57821d5a72ae21416c0be0dcd58779355",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/support": "5.5.*|5.6.*|5.7.*|5.8.*|^6.0",
-                "php": "^7.2"
-            },
-            "require-dev": {
-                "orchestra/testbench": "3.5.*|3.6.*|3.7.*|3.8.*|^4.0",
-                "phpunit/phpunit": "^8.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Spatie\\Cors\\CorsServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Spatie\\Cors\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Freek Van der Herten",
-                    "email": "freek@spatie.be",
-                    "homepage": "https://spatie.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Send CORS headers in a Laravel or Lumen application",
-            "homepage": "https://github.com/spatie/laravel-cors",
-            "keywords": [
-                "ajax",
-                "api",
-                "cors",
-                "laravel-cors",
-                "request",
-                "spatie"
-            ],
-            "support": {
-                "issues": "https://github.com/spatie/laravel-cors/issues",
-                "source": "https://github.com/spatie/laravel-cors/tree/1.6.0"
-            },
-            "abandoned": "laravel/framework",
-            "time": "2019-09-04T06:55:15+00:00"
         },
         {
             "name": "symfony/console",

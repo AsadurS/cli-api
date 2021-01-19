@@ -100,15 +100,15 @@ $app->routeMiddleware([
 
 // Add this line
 $app->register(Tymon\JWTAuth\Providers\LumenServiceProvider::class);
-$app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
+//$app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
 
+$app->register(Fruitcake\Cors\CorsServiceProvider::class);
 $app->configure('cors');
 
 $app->middleware([
-    Spatie\Cors\Cors::class,
+    // ...
+    Fruitcake\Cors\HandleCors::class,
 ]);
-
-$app->register(Spatie\Cors\CorsServiceProvider::class);
 /*
 |--------------------------------------------------------------------------
 | Load The Application Routes
